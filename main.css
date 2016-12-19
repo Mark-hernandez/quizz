@@ -1,0 +1,79 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: url(http://gallery.yopriceville.com/var/albums/Backgrounds/Coffee_Beans_Wooden_Background.jpg?m=1459816398);
+   	
+}
+
+h1, h2 {
+	text-align: center;
+	height: 125px;
+	width: 50%	
+	border: 2px  solid black;
+	font-size: 60px;
+	background-color: grey;
+	
+}
+
+button {
+	text-align: center;
+}
+
+.coffeemug img {
+	height: 200px;
+	width: 200px;
+	padding-left: 850px;
+	padding-right: 400px;
+	cursor: pointer;
+}
+
+.question-page {
+	text-align: center;
+	}
+
+li {
+	text-align: center;
+	font-size: 45;
+}
+
+.choices {
+	margin-left: 600px;
+	color: brown;
+	font-size: 30px;
+
+}
+
+ol .choices{
+	font-size: 20px;
+}
+
+label {
+	height: 125px;
+	width: 50%;
+	background-color: grey;
+	border: 2px solid black;
+	padding-left: 10px;
+	font-size: 60px;
+	display: flex;
+	border-radius: 30px;
+}
+
+label:hover {
+	background-color: red;
+}
+
+.question-text {
+
+	height: 125px;
+	width: 50%	
+	border: 10px  solid black;
+	font-size: 60px;
+	background-color: grey;
+	padding-left: 50px;
+	display: flex;
+}
+
+input {
+	width: 20px;
+	height: 20px;
+	display: flex;
+}

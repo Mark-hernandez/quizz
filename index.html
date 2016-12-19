@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="main.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+  <title>Coffee Quiz</title>
+
+  
+</head>
+<body>
+
+  <div class="container">
+
+    <main>
+    
+      <div class="start-page">
+        <h1>Coffee Quiz</h1>
+        <h2>Welcome! Please click the mug to get started!</h2>
+      
+        <form name="game-start">
+          <div class= 'coffeemug'>
+              <img src="http://www.clipartkid.com/images/732/coffee-house-ministry-cup-logo-with-transparent-bkgrd-piHaGI-clipart.png">
+          </div>
+      </div>
+
+      <div class="question-page" style="display: none;">
+        <h3><span class="question-count"></span> : <span class="question-text">fsdsd</span></h3>
+        <form name="current-question">
+          <ol type="A" class="choices"></ol>
+          <button type="submit">Submit</button>
+          <button class="restart-game">Start over</button>
+        </form>
+      </div>
+
+      <div class="answer-feedback-page" style="display: none;">
+        <div class="feedback-container">
+          <div class="feedback-header"></div>
+          <p class="feedback-text"></p>
+          <button class="see-next"></button>
+        </div>
+      </div>
+
+      <div class="final-feedback-page" style="display: none;">
+        <h1>Results</h1>
+        <p class="results-text"></p>
+        <button class="restart-game">Start over</button>
+      </div>
+    </main>
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
