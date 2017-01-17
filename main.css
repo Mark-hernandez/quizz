@@ -1,6 +1,6 @@
 body {
     font-family: 'Oswald', sans-serif;
-    background-image: url(http://gallery.yopriceville.com/var/albums/Backgrounds/Coffee_Beans_Wooden_Background.jpg?m=1459816398);
+    background-image: url(http://u.osu.edu/coffeebeanscommoditychain/files/2015/04/Coffeebeanz-txuhmf.jpg);
    	
 }
 
@@ -11,7 +11,28 @@ h1, h2 {
 	border: 2px  solid black;
 	font-size: 60px;
 	background-color: grey;
+	color: orange;
 	
+}
+
+p {
+	text-align: center;
+	height: 125px;
+	width: 50%	
+	border: 2px  solid black;
+	font-size: 40px;
+	background-color: grey;
+	color: orange;
+	
+}
+
+form {
+	text-align: center;
+
+}
+
+span {
+	color: orange;
 }
 
 button {
@@ -37,8 +58,9 @@ li {
 
 .choices {
 	margin-left: 600px;
-	color: brown;
+	color: orange;
 	font-size: 30px;
+	text-align: center;
 
 }
 
@@ -76,4 +98,8 @@ input {
 	width: 20px;
 	height: 20px;
 	display: flex;
+}
+
+button.see-next  {
+	text-align: center;
 }

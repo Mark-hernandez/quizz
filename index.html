@@ -14,18 +14,17 @@
 
     <main>
     
-      <div class="start-page">
+      <div class="start-page" style="display: none;">
         <h1>Coffee Quiz</h1>
-        <h2>Welcome! Please click the mug to get started!</h2>
-      
+        <p>Think you're a Coffee lover? Dive deep into this sack of beans and test your knowledge!</p>
+        
         <form name="game-start">
-          <div class= 'coffeemug'>
-              <img src="http://www.clipartkid.com/images/732/coffee-house-ministry-cup-logo-with-transparent-bkgrd-piHaGI-clipart.png">
-          </div>
+          <button type="submit">start</button>
+        </form>
       </div>
 
       <div class="question-page" style="display: none;">
-        <h3><span class="question-count"></span> : <span class="question-text">fsdsd</span></h3>
+        <h3><span class="question-count"></span> : <span class="question-text"></span></h3>
         <form name="current-question">
           <ol type="A" class="choices"></ol>
           <button type="submit">Submit</button>
@@ -48,9 +47,11 @@
       </div>
     </main>
 
+  </div>
 
 
-<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-<script type="text/javascript" src="app.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>

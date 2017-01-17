@@ -1,7 +1,5 @@
-
-// State object
 var state = {
-  questions: [
+   questions: [
     {
       text: "What color are coffee beans before they are roasted?",
       choices: ["White", "Brown", "Green", "Orange"],
@@ -29,11 +27,16 @@ var state = {
     }
   ],
   praises : [
-    "Correct! Please move along!"
+    "That was correct! Pour yourself a cup!",
+    "Correct. That was unBEANevable",
+    "You're right! Move on!",
+    "Sweet Beans! That was correct! Grind em up! "
   ],
 
   admonishments: [
-    "Your anser is incorrect, Please try again."
+    "Wrong. Go make some k-cup!",
+    "Incorrect. Go to Ethiopia. Study up and come back!",
+    "Wrong! Try finding the right answer at the bottom of your cup!"
   ],
   score: 0,
   currentQuestionIndex: 0,
@@ -79,7 +82,7 @@ function advance(state) {
 
 
 function renderApp(state, elements) {
-
+ 
   Object.keys(elements).forEach(function(route) {
     elements[route].hide();
   });
@@ -144,8 +147,8 @@ function renderChoices(state, element) {
 
 function renderAnswerFeedbackHeader(state, element) {
   var html = state.lastAnswerCorrect ?
-      "<h6 class='user-was-correct'>correct</h6>" :
-      "<h1 class='user-was-incorrect'>Wrooonnnngggg!</>";
+      "<h6 class='user-was-correct'></h6>" :
+      "<h1 class='user-was-incorrect'></>";
 
   element.html(html);
 };
@@ -168,7 +171,7 @@ function renderFinalFeedbackText(state, element) {
   element.text(text);
 };
 
-
+// Event handlers
 var PAGE_ELEMENTS = {
   'start': $('.start-page'),
   'question': $('.question-page'),
@@ -176,10 +179,10 @@ var PAGE_ELEMENTS = {
   'final-feedback': $('.final-feedback-page')
 };
 
-$('.coffeemug').click(function(event) {
+$("form[name='game-start']").submit(function(event) {
   event.preventDefault();
   setRoute(state, 'question');
-  renderApp(state, PAGE_ELEMENTS); 
+  renderApp(state, PAGE_ELEMENTS);
 });
 
 $(".restart-game").click(function(event){
@@ -196,7 +199,7 @@ $("form[name='current-question']").submit(function(event) {
   renderApp(state, PAGE_ELEMENTS);
 });
 
-$(".submit").click(function(event) {
+$(".see-next").click(function(event) {
   advance(state);
   renderApp(state, PAGE_ELEMENTS);
 });
